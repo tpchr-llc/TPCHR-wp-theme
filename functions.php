@@ -2,9 +2,10 @@
 
 // Add scripts and style
 function TPCHR_wp_theme_scripts() {
-    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
-    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6' );
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.3.6', true );
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' ); // Get rid of...
+    wp_enqueue_style( 'footer', get_template_directory_uri() . '/css/footer.css' );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.min.css', array(), '3.3.6' );
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', array( 'jquery' ), '3.3.6', true );
 }
 
 // Add access to a google font to be used.

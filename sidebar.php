@@ -20,7 +20,8 @@
                         sidebar
                     </h4>
                     <ol class="list-unstyled">
-                        
+                        <li><a href="<?php echo get_option('facebook'); ?>">facebook</a></li>
+                        <li><a href="<?php echo get_option('linkedin'); ?>">Linkedin</a></li>
                     </ol>
                 </div>
             </div>

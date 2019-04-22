@@ -60,3 +60,5 @@ add_action( 'wp_print_styles', 'TPCHR_wp_theme_fonts' );
 add_theme_support( 'title-tag' );
 add_action( 'admin_menu', 'TPCHR_wp_theme_Add_Menu' );
 add_action('admin_init', 'TPCHR_Theme_Settings_Page_Setup');
+// Support Featured Images in posts.
+add_theme_support('post_thumbnail');

@@ -35,31 +35,45 @@ function TPCHR_Theme_Settings_Page() {
 }
 
 function setting_facebook() {
-?>
-    <input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>"/>
-<?php
+    ?>
+    <input type="text" name="facebook"  id="facebook"  value="<?php echo get_option('facebook'); ?>" />
+    <?php
 }
-
 function setting_linkedin() {
-?>
-    <input type="text" name="linkedin" id="linkedin" value="<?php echo get_option('linkedin'); ?>"/>
-<?php
+    ?>
+    <input type="text" name="linkedin"  id="linkedin"  value="<?php echo get_option('linkedin'); ?>" />
+    <?php
+}
+function setting_twitter() {
+    ?>
+    <input type="text" name="twitter"   id="twitter"   value="<?php echo get_option('twitter'); ?>" />
+    <?php
+}
+function setting_instagram() {
+    ?>
+    <input type="text" name="instagram" id="instagram" value="<?php echo get_option('instagram'); ?>" />
+    <?php
 }
 
 function TPCHR_Theme_Settings_Page_Setup() {
     add_settings_section('section', 'All Settings', null, 'theme-options');
-    add_settings_field('facebook', 'facebook URL', 'setting_facebook', 'theme-options', 'section');
-    add_settings_field('linkedin', 'Linkedin URL', 'setting_linkedin', 'theme-options', 'section');
+
+    add_settings_field('facebook',  'facebook URL',  'setting_facebook',  'theme-options', 'section');
+    add_settings_field('linkedin',  'Linkedin URL',  'setting_linkedin',  'theme-options', 'section');
+    add_settings_field('twitter',   'Twitter URL',   'setting_twitter',   'theme-options', 'section');
+    add_settings_field('instagram', 'Instagram URL', 'setting_instagram', 'theme-options', 'section');
 
     register_setting('section', 'facebook');
     register_setting('section', 'linkedin');
+    register_setting('section', 'twitter');
+    register_setting('section', 'instagram');
 }
 
-add_action( 'wp_enqueue_scripts', 'TPCHR_wp_theme_scripts' );
-add_action( 'wp_print_styles', 'TPCHR_wp_theme_fonts' );
+add_action('wp_enqueue_scripts', 'TPCHR_wp_theme_scripts' );
+add_action('wp_print_styles', 'TPCHR_wp_theme_fonts' );
 // WordPress Titles
 add_theme_support( 'title-tag' );
-add_action( 'admin_menu', 'TPCHR_wp_theme_Add_Menu' );
+add_action('admin_menu', 'TPCHR_wp_theme_Add_Menu' );
 add_action('admin_init', 'TPCHR_Theme_Settings_Page_Setup');
 // Support Featured Images in posts.
 add_theme_support('post_thumbnail');

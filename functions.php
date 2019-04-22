@@ -34,25 +34,23 @@ function TPCHR_Theme_Settings_Page() {
 <?php
 }
 
-function setting_facebook() {
-?>
-    <input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>"/>
-<?php
-}
-
-function setting_linkedin() {
-?>
-    <input type="text" name="linkedin" id="linkedin" value="<?php echo get_option('linkedin'); ?>"/>
-<?php
-}
+function setting_facebook() {?><input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>"/><?php}
+function setting_linkedin() {?><input type="text" name="linkedin" id="linkedin" value="<?php echo get_option('linkedin'); ?>"/><?php}
+function setting_twitter() {?><input type="text" name="twitter" id="twitter" value="<?php echo get_option('twitter'); ?>"/><?php}
+function setting_linkedin() {?><input type="text" name="instagram" id="instagram" value="<?php echo get_option('instagram'); ?>"/><?php}
 
 function TPCHR_Theme_Settings_Page_Setup() {
     add_settings_section('section', 'All Settings', null, 'theme-options');
+    
     add_settings_field('facebook', 'facebook URL', 'setting_facebook', 'theme-options', 'section');
     add_settings_field('linkedin', 'Linkedin URL', 'setting_linkedin', 'theme-options', 'section');
+    add_settings_field('twitter', 'twitter URL', 'setting_twitter', 'theme-options', 'section');
+    add_settings_field('instagram', 'instagram URL', 'setting_instagram', 'theme-options', 'section');
 
     register_setting('section', 'facebook');
     register_setting('section', 'linkedin');
+    register_setting('section', 'twitter');
+    register_setting('section', 'instagram');
 }
 
 add_action( 'wp_enqueue_scripts', 'TPCHR_wp_theme_scripts' );

@@ -1,0 +1,17 @@
+/*
+Theme Name: Custom Theme 01
+Author: Daniel Watson
+Description: This is my first theme ever...
+Version: 0.0.1
+Tags:
+*/
+.blog-nav li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  background-color: #428BCA
+}
+.blog-nav li a {
+  color: #fff;
+}

@@ -5,7 +5,7 @@
                         if ( have_posts() ) :
                             while ( have_posts() ) :
                                 the_post();
-                                get_template_part( 'content-single', get_post_format() );
+                                get_template_part( '_post-complete', get_post_format() );
                                 if ( comments_open() || ger_comments_number() ) :
                                     comments_template();
                                 endif;

@@ -8,12 +8,3 @@
 .blog-nav li a {
   color: #fff;
 }
-
-.pager {
-    list-style: none;
-}
-.pager li {
-    float: left;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-}

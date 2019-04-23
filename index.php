@@ -9,9 +9,9 @@
             			    endwhile;
                     ?>
                             <nav>
-                                <ul class="pager">
-                                    <li><?php next_posts_link( '<<' ); ?></li>
-                                    <li><?php previous_posts_link( '>>' ); ?></li>
+                                <ul class="pagination">
+                                    <li class="page-item"><?php next_posts_link( '<<' ); ?></li>
+                                    <li class="page-item"><?php previous_posts_link( '>>' ); ?></li>
                                 </ul>
                             </nav>
                     <?php

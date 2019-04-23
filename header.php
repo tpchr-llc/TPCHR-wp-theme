@@ -41,7 +41,17 @@ information, links to stylesheets and scripts, and other data.
             <div class="blog-header">
                 <h1 class="blog-title">
                     <a href="<?php echo get_bloginfo( 'wpurl' );?>">
-                        <?php echo get_bloginfo( 'name' ); ?>
+                        <?php
+                        if ( get_theme_mod( 'your_theme_logo' ) ) :
+                        ?>
+                        <img src="<?php echo get_theme_mod( 'your_theme_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
+                        <?php
+                        else :
+                        ?>
+                        <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+                        <?php
+                        endif;
+                        ?>
                     </a>
                 </h1>
                 <p class="lead blog-description">

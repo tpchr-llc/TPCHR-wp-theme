@@ -1,20 +1,17 @@
 # TPCHR-wp-theme
 The WordPress theme for https://connectwithhr.com
 
-This WordPress is barebones BootStrap implementation.
+This is a custom theme for The Payroll Company HR. It uses CDN Bootstrap for
+style compilation.
 
-Resources for development are:
-
-## TemplateToaster
-[How to Create WordPress Theme from Scratch : Beginners Guide (2019)](https://blog.templatetoaster.com/create-wordpress-theme-scratch/)
-
-## Tania Rascia (3 Parts)
-1. [Developing a Wordpress Theme from Scratch](https://www.taniarascia.com/developing-a-wordpress-theme-from-scratch/)
-1. [Pagination, Comments, Functions, & Custom Posts](https://www.taniarascia.com/wordpress-from-scratch-part-two/)
-1. [Creating Custom Fields and Meta Boxes](https://www.taniarascia.com/wordpress-part-three-custom-fields-and-metaboxes/)
+Custom page templates are denoted with a leading underscore '\_'. Templates not
+being implemented exist in the "Templates_unused" folder. 
 
 ## WordPress Codex
 [Main Page](https://codex.wordpress.org/)
+
+## Bootstrap Documentation
+[Getting started and more](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 
 ---
 [MarkDown CheatSheet][1]

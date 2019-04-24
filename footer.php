@@ -6,7 +6,7 @@
 
                     <!-- Create variables for all this stuff at the bottom!!!!!! -->
                     <p>
-                        COPYRIGHT &copy; 2019 • THE PAYROLLCOMPANY HR 6405 CENTURY AVENUE MIDDLETON, WI 53562 | 877-763-5111
+                        COPYRIGHT &copy; <?php get_theme_mod('TPCHR-wp-theme_footer_cYear') ?> • <?php bloginfo( 'name' ) . ' ' . get_theme_mod('TPCHR-wp-theme_footer_Address') ?> | 877-763-5111
                     </p>
                 </div>
                 <div class="tpchr-footer-bottom-social"></div>

@@ -42,15 +42,17 @@ information, links to stylesheets and scripts, and other data.
                 <h1 class="blog-title">
                     <a href="<?php echo get_bloginfo( 'wpurl' );?>">
                         <?php
-                        if ( get_theme_mod( 'your_theme_logo' ) ) :
-                        ?>
-                        <img src="<?php echo get_theme_mod( 'TPCHR-wp-theme_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
-                        <?php
-                        else :
-                        ?>
-                        <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-                        <?php
-                        endif;
+                            Output_Customizer_Setting(
+                                'img',
+                                array(
+                                    'src' => 'TPCHR-wp-theme_logo',
+                                    'alt' => esc_attr(get_bloginfo('name', 'display'))
+                                ),
+                                null,
+                                "h1",
+                                "class=\"site-title\"",
+                                get_bloginfo( 'name' )
+                            );
                         ?>
                     </a>
                 </h1>

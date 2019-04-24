@@ -1,15 +1,66 @@
         </div> <!-- /.container -->
-        <footer class="tpchr-footer">
-            <div class="tpchr-footer-bottom">
-                <div class="tpchr-footer-bottom-phone"></div>
-                <div class="tpchr-footer-bottom-copyright">
-
-                    <!-- Create variables for all this stuff at the bottom!!!!!! -->
-                    <p>
-                        COPYRIGHT &copy; <?php get_theme_mod('TPCHR-wp-theme_footer_cYear') ?> • <?php bloginfo( 'name' ) . ' ' . get_theme_mod('TPCHR-wp-theme_footer_Address') ?> | 877-763-5111
+        <footer class="tpchr-footer container-fluid">
+            <div class="tpchr-footer-bottom row">
+                <div class="tpchr-footer-bottom-phone col">
+                    <?php
+                        Output_Customizer_Setting(
+                            'span',
+                            array(),
+                            'TPCHR-wp-theme_contact_phone1',
+                            'span',
+                            '',
+                            '[PRIMARY CONTACT PHONE]'
+                        );
+                    ?>
+                </div>
+                <div class="tpchr-footer-bottom-copyright col">
+                    <P>
+                        COPYRIGHT &copy;
+                        <?php
+                            Output_Customizer_Setting(
+                                'span',
+                                array(),
+                                'TPCHR-wp-theme_footer_cYear',
+                                'span',
+                                '',
+                                '[COPYRIGHT YEAR]'
+                            );
+                        ?> • <?php
+                            Output_Customizer_Setting(
+                                'span',
+                                array(),
+                                get_bloginfo( 'name' ),
+                                'span',
+                                '',
+                                '[BLOG NAME]'
+                            );
+                        ?>
+                    </p>
+                    <P>
+                        <?php
+                            Output_Customizer_Setting(
+                                'span',
+                                array(),
+                                'TPCHR-wp-theme_footer_Address',
+                                'span',
+                                '',
+                                '[CONTACT ADDRESS]'
+                            );
+                        ?> | <?php
+                            Output_Customizer_Setting(
+                                'span',
+                                array(),
+                                'TPCHR-wp-theme_contact_phone2',
+                                'span',
+                                '',
+                                '[SECONDARY PHONE]'
+                            );
+                        ?>
                     </p>
                 </div>
-                <div class="tpchr-footer-bottom-social"></div>
+                <div class="tpchr-footer-bottom-social col">
+                    asdfasf
+                </div>
             </div>
         </footer>
         <?php wp_footer(); ?>

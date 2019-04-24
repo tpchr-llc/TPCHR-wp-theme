@@ -44,7 +44,7 @@ information, links to stylesheets and scripts, and other data.
                         <?php
                         if ( get_theme_mod( 'your_theme_logo' ) ) :
                         ?>
-                        <img src="<?php echo get_theme_mod( 'your_theme_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
+                        <img src="<?php echo get_theme_mod( 'TPCHR-wp-theme_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
                         <?php
                         else :
                         ?>

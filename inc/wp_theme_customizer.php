@@ -1,21 +1,13 @@
 <?php
+require get_template_directory() . '/inc/wp_theme_customizer_sections/section_site_identity.php';
+require get_template_directory() . '/inc/wp_theme_customizer_sections/section_contact.php';
+require get_template_directory() . '/inc/wp_theme_customizer_sections/section_footer.php';
+
 /**
-* Create Logo Setting and Upload Control
 */
 function TPCHR_wp_theme_customize_register( $wp_customize ) {
-    // add a setting for the site logo
-    $wp_customize->add_setting('your_theme_logo');
-
-    // Add a control to upload the logo
-    $wp_customize->add_control(
-        new WP_Customize_Image_Control(
-            $wp_customize, 'your_theme_logo',
-            array(
-                'label' => 'Upload Logo',
-                'section' => 'title_tagline',
-                'settings' => 'your_theme_logo',
-            )
-        )
-    );
+    Customizer_Section_Site_Identity($wp_customize);
+    Customizer_Section_Contact($wp_customize);
+    Customizer_Section_Footer($wp_customize);
 }
 add_action( 'customize_register', 'TPCHR_wp_theme_customize_register' );

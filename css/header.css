@@ -1,0 +1,19 @@
+.tpchr-header-logo {
+    float: left;
+}
+
+.tpchr-header-control {
+    float: right;
+}
+
+.tpchr-header-control-nav li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    background-color: #428BCA
+}
+
+.tpchr-header-control-nav li a {
+    color: #fff;
+}

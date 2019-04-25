@@ -24,39 +24,32 @@ information, links to stylesheets and scripts, and other data.
         <?php wp_head();?>
     </head>
     <body>
-        <!--
+<!--
 *******************************************************************************
         CHANGE THESE CLASS NAMES DANIEL!!!
 *******************************************************************************
-        -->
-
-        <div class="blog-masthead">
-            <div class="container">
-                <nav class="blog-nav">
-                    <?php wp_list_pages( '&title_li=' ); ?>
-                </nav>
-            </div>
-        </div>
-        <div class="container">
-            <div class="blog-header">
-                <h1 class="blog-title">
-                    <a href="<?php echo get_bloginfo( 'wpurl' );?>">
-                        <?php
-                            Output_Customizer_Setting(
-                                'img',
-                                array(
-                                    'src' => 'TPCHR-wp-theme_logo',
-                                    'alt' => esc_attr(get_bloginfo('name', 'display'))
-                                ),
-                                null,
-                                "h1",
-                                "class=\"site-title\"",
-                                get_bloginfo( 'name' )
-                            );
-                        ?>
-                    </a>
-                </h1>
+-->
+        <header class="tpchr-header container-fluid">
+            <div class="tpchr-header-logo">
+                <a href="<?php echo get_bloginfo( 'wpurl' );?>">
+                    <?php
+                        Output_Customizer_Setting('img',
+                        array('src' => 'TPCHR-wp-theme_logo','alt' =>esc_attr(get_bloginfo('name', 'display'))),
+                        null,"h1","class=\"site-title\"",get_bloginfo( 'name' ));
+                    ?>
+                </a>
                 <p class="lead blog-description">
                     <?php echo get_bloginfo( 'description' ); ?>
                 </p>
             </div>
+            <div class="tpchr-header-control container-fluid">
+                <div class="row">
+                </div>
+                <div class="row">
+                    <nav class="tpchr-header-control-nav col-sm-12">
+                        <?php wp_list_pages( '&title_li=' ); ?>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">

@@ -55,3 +55,12 @@ function Output_Customizer_Setting($tag, $atts, $content, $backupTag, $backupatt
     }
     echo $echostr;
 }
+
+function Customizer_Setting_Out($setting, $backupStr) {
+    if (get_theme_mod($setting)) {
+        $setting = get_theme_mod($setting);
+    } else {
+        $setting = $backupStr;
+    }
+    echo $setting;
+}

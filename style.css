@@ -5,3 +5,9 @@ Description: Payroll Company HR; custom WordPress theme.
 Version: 0.0.1
 Tags: Custom, TPC, TPCHR
 */
+
+/*
+Path to dir: C:\xampp\apps\wordpress\htdocs\wp-content\themes\TPCHR-wp-theme\
+To compile Sass sheets to css.
+sass .\css\scss\:css
+*/

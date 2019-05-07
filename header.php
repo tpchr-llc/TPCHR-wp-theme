@@ -1,8 +1,6 @@
 <!--
 The header template file usually contains your site’s document type, meta
 information, links to stylesheets and scripts, and other data.
-
-
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,11 +18,6 @@ information, links to stylesheets and scripts, and other data.
         <?php wp_head();?>
     </head>
     <body>
-<!--
-*******************************************************************************
-        CHANGE THESE CLASS NAMES DANIEL!!!
-*******************************************************************************
--->
         <header class="tpchr-header container-fluid sticky-top">
             <div class="tpchr-header-logo">
                 <a href="<?php echo get_bloginfo('wpurl');?>">

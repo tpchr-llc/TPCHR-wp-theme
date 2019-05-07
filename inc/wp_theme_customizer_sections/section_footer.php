@@ -19,7 +19,6 @@ function Customizer_Section_Footer($wp_customize) {
             'type' => 'theme_mod',
             'capability' => 'edit_theme_options',
             'theme_supports' => '',
-            'default' => 'Year xxxx',
             'transport' => 'refresh',
             'sanitize_callback' => '',
             'sanitize_js_callback' => ''
@@ -42,7 +41,6 @@ function Customizer_Section_Footer($wp_customize) {
             'type' => 'theme_mod',
             'capability' => 'edit_theme_options',
             'theme_supports' => '',
-            'default' => '221 B Baker St, London',
             'transport' => 'refresh',
             'sanitize_callback' => '',
             'sanitize_js_callback' => ''

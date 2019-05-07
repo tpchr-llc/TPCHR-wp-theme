@@ -12,7 +12,6 @@ information, links to stylesheets and scripts, and other data.
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -28,15 +27,19 @@ information, links to stylesheets and scripts, and other data.
 -->
         <header class="tpchr-header container-fluid sticky-top">
             <div class="tpchr-header-logo">
-                <a href="<?php echo get_bloginfo( 'wpurl' );?>">
-                    <?php
-                        Output_Customizer_Setting('img',
-                        array('src' => 'TPCHR-wp-theme_logo','alt' =>esc_attr(get_bloginfo('name', 'display'))),
-                        null,"h1","class=\"site-title\"",get_bloginfo( 'name' ));
-                    ?>
+                <a href="<?php echo get_bloginfo('wpurl');?>">
+                    <?php if(get_theme_mod('TPCHR-wp-theme_logo')) : ?>
+                        <img src="<?php echo get_theme_mod('TPCHR-wp-theme_logo'); ?>" alt="<?php esc_attr(get_bloginfo('name', 'display')); ?>" />
+                    <?php else : ?>
+                        <h1 class="site-title">
+                            <?php echo get_bloginfo( 'name' ); ?>
+                        </h1>
+                    <?php endif; ?>
                 </a>
-                <p class="lead blog-description">
-                    <?php echo get_bloginfo( 'description' ); ?>
+                <p class="lead">
+                    <?php
+                        echo get_bloginfo('description');
+                    ?>
                 </p>
             </div>
             <div class="tpchr-header-control container-fluid">
@@ -44,7 +47,11 @@ information, links to stylesheets and scripts, and other data.
                 </div>
                 <div class="row">
                     <nav class="tpchr-header-control-nav col-sm-12">
-                        <?php wp_list_pages( '&title_li=' ); ?>
+                        <?php
+                            wp_nav_menu(
+                                array('theme_location' => 'header-menu')
+                            );
+                        ?>
                     </nav>
                 </div>
             </div>

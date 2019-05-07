@@ -1,0 +1,51 @@
+
+
+.tpchr-footer {
+    $padding: 60px;
+    color: white;
+    background-color: #969696;
+    padding-bottom: 20px;
+    padding-left: $padding;
+    padding-right: $padding;
+    margin: auto;
+}
+
+.tpchr-footer-bottom-phone {
+    background-image: url(../images/phoneIcon.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 50px;
+    padding-left: 70px;
+    vertical-align: middle;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 800;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: lightgray;
+        }
+    }
+}
+
+.tpchr-footer-bottom-copyright {
+    text-align: center !important;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.tpchr-footer-bottom-social {
+    ul {
+        list-style: none;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        background: url(../images/facebook-icon.png)
+    }
+}

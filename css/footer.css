@@ -1,22 +1,3 @@
-.tpchr-header-logo {
-  float: left;
-}
-
-.tpchr-header-control {
-  float: right;
-}
-
-.tpchr-header-control-nav li {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  font-weight: 500;
-  background-color: #428BCA;
-}
-.tpchr-header-control-nav li a {
-  color: #fff;
-}
-
 .tpchr-footer {
   color: white;
   background-color: #969696;
@@ -64,4 +45,4 @@
   background: url(../images/facebook-icon.png);
 }
 
-/*# sourceMappingURL=theme.css.map */
+/*# sourceMappingURL=footer.css.map */

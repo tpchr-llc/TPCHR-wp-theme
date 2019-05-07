@@ -6,17 +6,21 @@
                 </div>
                 <div class="tpchr-footer-bottom-copyright col-sm-4">
                     COPYRIGHT &copy;
-                    <?php
-                        Output_Customizer_Setting('span',array(),'TPCHR-wp-theme_footer_cYear','span','','[COPYRIGHT YEAR]');
-                    ?> • <?php
-                        Output_Customizer_Setting('span',array(),get_bloginfo( 'name' ),'span','','[BLOG NAME]');
-                    ?>
+                    <span>
+                        <?php Customizer_Setting_Out('TPCHR-wp-theme_footer_cYear', '[COPYRIGHT YEAR]'); ?>
+                    </span>
+                    •
+                    <span>
+                        <?php Customizer_Setting_Out(get_bloginfo( 'name' ), '[BLOG NAME]'); ?>
+                    </span>
                     <br />
-                    <?php
-                        Output_Customizer_Setting('span',array(),'TPCHR-wp-theme_footer_Address','span','','[CONTACT ADDRESS]');
-                    ?> | <?php
-                        Output_Customizer_Setting('span',array(),'TPCHR-wp-theme_contact_phone2','span','','[SECONDARY PHONE]');
-                    ?>
+                    <span>
+                        <?php Customizer_Setting_Out('TPCHR-wp-theme_footer_Address', '[CONTACT ADDRESS]'); ?>
+                    </span>
+                    |
+                    <span>
+                        <?php Customizer_Setting_Out('TPCHR-wp-theme_contact_phone2', '[SECONDARY PHONE]'); ?>
+                    </span>
                     <br />
                     Privacy Policy
                     <br />

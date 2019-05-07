@@ -13,6 +13,7 @@
   font-weight: 500;
   background-color: #428BCA;
 }
+
 .tpchr-header-control-nav li a {
   color: #fff;
 }
@@ -37,10 +38,12 @@
   line-height: 48px;
   font-weight: 800;
 }
+
 .tpchr-footer-bottom-phone a {
   color: white;
   text-decoration: none;
 }
+
 .tpchr-footer-bottom-phone a:hover {
   color: lightgray;
 }
@@ -49,7 +52,7 @@
   text-align: center !important;
   font-size: 13px;
   line-height: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -58,10 +61,10 @@
 .tpchr-footer-bottom-social ul {
   list-style: none;
 }
+
 .tpchr-footer-bottom-social img {
   max-width: 100%;
   height: auto;
   background: url(../images/facebook-icon.png);
 }
-
 /*# sourceMappingURL=theme.css.map */

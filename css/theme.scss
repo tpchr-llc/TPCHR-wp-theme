@@ -1,6 +1,8 @@
 // cd \xampp\apps\wordpress\htdocs\wp-content\themes\TPCHR-wp-theme\
 // sass css\scss\theme.scss css\theme.css
 @import "./variables";
+@import "./functions";
+@import "./mixins";
 @import "./00_global";
 @import "./01_header";
 @import "./02_footer";
